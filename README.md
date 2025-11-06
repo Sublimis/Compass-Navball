@@ -23,9 +23,25 @@ Our compass and navball apps can be used as instruments, to visualize external d
 
 - Add the following permission to your Android manifest:
 
+  - Standard compass:
 ```xml
 <uses-permission
-    android:name="com.sublimis.compass.permission.CONTROL" />
+    android:name="com.sublimis.compass.std.permission.CONTROL" />
+```
+  - AHRS compass:
+```xml
+<uses-permission
+    android:name="com.sublimis.compass.ahrs.permission.CONTROL" />
+```
+  - KSP navball:
+```xml
+<uses-permission
+    android:name="com.sublimis.navball.ksp.permission.CONTROL" />
+```
+  - NASA Apollo FDAI navball:
+```xml
+<uses-permission
+    android:name="com.sublimis.navball.apollo.permission.CONTROL" />
 ```
 
 - Start a wanted component activity:
